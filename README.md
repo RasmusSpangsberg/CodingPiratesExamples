@@ -2,10 +2,8 @@ opgave1.py - lister
 
 opgave2.py - strings
 
-TODO
+opgave3.py - dicts
 
-opgave3.py - dicts???
+opgave4.py - functions
 
-opgave4.py - ???
-
-opgaveX.py - objects/class
+opgave5.py - objects/class
