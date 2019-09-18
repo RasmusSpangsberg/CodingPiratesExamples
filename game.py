@@ -33,7 +33,7 @@ class Player:
 		self.velocity_x = 0
 		self.velocity_y = 0
 
-	def update(self, keys_pressed, events):
+	def update(self, keys_pressed):
 		pygame.draw.rect(screen, GREEN, self.body)
 		
 		# This is the easiest to understand approach that i have found.
@@ -46,38 +46,6 @@ class Player:
 		if keys_pressed[pygame.K_DOWN]:
 			self.body.y += self.speed
 
-		# Other examples of movements:
-		# we can't use "pygame.event.get()" here, because
-		# we have already used it once (in the while-loop,
-		# the method dequeues all events from a queue), 
-		# so we need to store the output the first time in 
-		# a variable (events), and then pass it to this function
-		'''
-		for event in events:
-			if event.type == pygame.KEYDOWN:
-				if event.key == pygame.K_LEFT:
-					self.velocity_x -= self.speed
-				if event.key == pygame.K_RIGHT:
-					self.velocity_x += self.speed
-				if event.key == pygame.K_UP:
-					self.velocity_y -= self.speed
-				if event.key == pygame.K_DOWN:
-					self.velocity_y += self.speed
-
-			if event.type == pygame.KEYUP:
-				if event.key == pygame.K_LEFT:
-					self.velocity_x += self.speed
-				if event.key == pygame.K_RIGHT:
-					self.velocity_x -= self.speed
-				if event.key == pygame.K_UP:
-					self.velocity_y += self.speed
-				if event.key == pygame.K_DOWN:
-					self.velocity_y -= self.speed
-		
-		self.body.x += self.velocity_x
-		self.body.y += self.velocity_y
-		'''
-
 player = Player()
 
 playing = True
@@ -87,8 +55,7 @@ while playing:
 	if keys_pressed[pygame.K_ESCAPE]:
 		playing = False
 
-	events = pygame.event.get()
-	for event in events:
+	for event in pygame.event.get():
 		if event.type == pygame.QUIT:
 			pygame.quit()
 			exit()
