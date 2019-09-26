@@ -9,7 +9,7 @@
 # Opgave C:
 # Udskriv alle de lige tal i listen.
 # Hint: x % 2 er lig med 0 hvis x er lige,
-# og lig med 1 hvis x er ulige.
+# og lig med 1 hvis x er ulige.c
 # Eksempler:
 # 5 % 2 == 1
 # 7 % 2 == 1
@@ -17,7 +17,11 @@
 # 2 % 2 == 0
 # 0 % 2 == ? Find selv svaret på den her
 
-list1 = range(100)
+list1 = [0, 1, 2, 3, 4, 5]
+
+for i in range(6):
+	print(list1[i])
+
 
 # Kode til opgave A:
 
@@ -26,3 +30,15 @@ list1 = range(100)
 
 
 # Kode til opgave C:
+if 11 % 2 == 0:
+	print("hej")
+
+
+
+
+
+
+
+
+
+

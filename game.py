@@ -62,7 +62,7 @@ while playing:
 
 	screen.fill(BACKGROUND_COLOR)
 	
-	player.update(keys_pressed, events)
+	player.update(keys_pressed)
 
 	pygame.display.flip()
 	clock.tick(60)
