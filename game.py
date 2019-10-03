@@ -36,7 +36,6 @@ class Player:
 	def update(self, keys_pressed):
 		pygame.draw.rect(screen, GREEN, self.body)
 		
-		# This is the easiest to understand approach that i have found.
 		if keys_pressed[pygame.K_LEFT]:
 			self.body.x -= self.speed
 		if keys_pressed[pygame.K_RIGHT]:

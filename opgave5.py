@@ -17,13 +17,9 @@ class Person:
 
 	def __init__(self, name):
 		self.hej = name
-		self.a = 5
 
 	def sayMyName(self):
 		print("My name is " + self.hej)
-
-	def skrivA(self):
-		print(self.a)
 
 print("Opgave A:")
 
@@ -57,9 +53,8 @@ print()
 print("Brændstof:", car_bmw.fuel)
 print("Antal kilometer kørt:", car_bmw.km_driven)
 
-
 # Svær opgave (du SKAL ikke lave den her):
-# 1. Gør sådan så Car klassen kan tage et ekstra argument: People
+# 1. Gør sådan så Car klassen kan tage et ekstra argument: Persons
 # 	 Dette argument skal være en liste af alle de personer
 #	 der er i bilen. For at gøre dette skal du lave en klasse
 #	 så vi kan lave personer. Den kan fx tage et navn som input.
@@ -69,8 +64,3 @@ print("Antal kilometer kørt:", car_bmw.km_driven)
 # 
 # 3. Lav en ny funktion i Car klassen som tilføjer en ny person til 
 # 	 bilens liste af personer. Denne funktion tager en Person som input.
-
-class Person:
-	pass
-
-
