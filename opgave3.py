@@ -15,7 +15,7 @@
 # for key, value in ordbog.items():
 
 # udfyld ordbogen med navn og alder
-ordbog = {"navn": "SkrivDitNavnHer", "alder":0}
+ordbog = {"navn":"SkrivDitNavnHer", "alder":0}
 
 # Kode til opgave A:
 

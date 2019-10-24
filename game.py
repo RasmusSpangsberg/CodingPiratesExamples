@@ -20,18 +20,10 @@ BACKGROUND_COLOR = GREY
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 screen.fill(GREY)
 
-def draw_player():
-	ground = pygame.Rect([0, SCREEN_HEIGHT // 3, SCREEN_WIDTH, SCREEN_HEIGHT])
-	pygame.draw.rect(screen, GREEN, ground)
-
 class Player:
 	def __init__(self):
-		self.speed = 5
-		self.direction = "left"
 		self.body = pygame.Rect([SCREEN_WIDTH//2, SCREEN_HEIGHT//2, 50, 50])
-		
-		self.velocity_x = 0
-		self.velocity_y = 0
+		self.speed = 5
 
 	def update(self, keys_pressed):
 		pygame.draw.rect(screen, GREEN, self.body)
