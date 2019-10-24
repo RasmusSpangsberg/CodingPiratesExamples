@@ -1,10 +1,17 @@
 # Opgave A:
-# Udskriv alle elementerne i list1.
+# Find ud af hvorfor alle tallene i listen bliver skrevet ud.
+# Spørg efter hjælp!
 
 # Opgave B:
 # Udskriv KUN tallet 3 (ved brug af listen)
 # Kan du finde på 2 forskellige måder at gøre
 # det her på?
+# Hint:
+# Hvis vi gerne vil have fat i det første tal i listen, skriver vi:
+# list1[0]
+# det andet tal:
+# list[1]
+# og så videre.
 
 # Opgave C:
 # Udskriv alle de lige tal i listen.
